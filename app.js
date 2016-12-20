@@ -9,8 +9,8 @@ angular.module('moviecat', [
 ]).
 constant('App', {  //constant  共有属性提取
 	pageCount:10,
-	listApi:'http://api.douban.com/v2/movie/',
-	detailApi:'http://api.douban.com/v2/movie/subject/'
+	listApi:'//api.douban.com/v2/movie/',
+	detailApi:'//api.douban.com/v2/movie/subject/'
 })
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({ redirectTo: '/in_theaters/1' });
