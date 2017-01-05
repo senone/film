@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My AngularJS App</title>
+  <title>film</title>
   <link rel="stylesheet" href="bower_components/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="app.css">
 </head>
@@ -20,14 +20,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">豆瓣电影</a>
+        <a class="navbar-brand" href="#">电影推荐</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Account</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Help</a></li>
+          <li auto-focus><a href="#/in_theaters/1">正在热映</a></li>
+          <li auto-focus><a href="#/coming_soon/1">即将上映</a></li>
+          <li auto-focus><a href="#/top250/1">TOP</a></li>
         </ul>
         <form class="navbar-form navbar-right" ng-submit="search()" ng-controller="searchController">
           <input type="text" class="form-control" placeholder="Search..." ng-model='content'>
@@ -37,20 +36,12 @@
   </nav>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3 col-md-2 sidebar">
-        <ul class="nav nav-sidebar">
-					<li auto-focus><a href="#/in_theaters/1">正在热映</a></li>
-          <li auto-focus><a href="#/coming_soon/1">即将上映</a></li>
-          <li auto-focus><a href="#/top250/1">TOP</a></li>
-         <!--  <li ng-class="{active:type == '/in_theaters'}"><a href="#/in_theaters/1">正在热映</a></li>
-         <li ng-class="{active:type == '/coming_soon'}"><a href="#/coming_soon/1">即将上映</a></li>
-         <li ng-class="{active:type == '/top250'}"><a href="#/top250/1">TOP</a></li> -->
-        </ul>
 
-      </div>
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view></div>
+      <div class=" col-xs-12 col-sm-12  col-md-12  main" ng-view></div>
     </div>
   </div>
+  <script src="bower_components/jquery/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/bootstrap.min.js"></script>
  <script src="bower_components/angular/angular.min.js"></script>
  <script src="bower_components/angular-route/angular-route.min.js"></script>
 <!--  主模块 -->

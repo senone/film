@@ -1,7 +1,7 @@
-<div class="jumbotron">
+<div class="media">
   <h2>{{detail.title}}</h2>
-  <img ng-src="{{detail.images.large}}" alt="{{detail.title}}">
-  <p>{{detail.summary}}</p>
+  <img class="pull-left" ng-src="{{detail.images.large}}" alt="{{detail.title}}">
+  <h2>{{detail.summary}}</h2>
   <p><a class="btn btn-primary btn-lg" href="{{detail.alt}}" role="button" ng-show="!loading">Learn more</a></p>
   <div ng-show="loading">
   <h2>loading...</h2>
