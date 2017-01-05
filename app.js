@@ -27,22 +27,3 @@ constant('App', {  //constant  共有属性提取
 
 }])
 ;
-
-
-// .controller('NavController', [
-//   '$scope',
-//   '$location',
-//   function($scope, $location) {
-//     $scope.$location = $location;
-//     $scope.$watch('$location.path()', function(now) {
-//       if (now.startsWith('/in_theaters')) {
-//         $scope.type = 'in_theaters';
-//       } else if (now.startsWith('/coming_soon')) {
-//         $scope.type = 'coming_soon';
-//       } else if (now.startsWith('/top250')) {
-//         $scope.type = 'top250';
-//       }
-//       console.log($scope.type);
-//     });
-//   }
-// ])

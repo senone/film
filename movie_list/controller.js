@@ -2,7 +2,7 @@
 * @Author: senon
 * @Date:   2016-12-01 11:21:10
 * @Last Modified by:   senon
-* @Last Modified time: 2016-12-03 17:20:48
+* @Last Modified time: 2017-01-05 23:26:00
 */
 
 'use strict';
@@ -49,18 +49,5 @@
 
 
 }]);
-
-
-	/*function($scope,$http,httpService){
-		$http.get('/app/datas/in_theaters.json').then(function(source){
-			if(source.status == 200){
-				$scope.subjects = source.data.subjects;
-			}else{
-				$scope.message = "获取对象错误："+ source.statusText;
-			}
-
-		}, function(err){
-			$scope.message = "获取对象错误："+err.statusText;
-		});*/
 
 })(angular)
